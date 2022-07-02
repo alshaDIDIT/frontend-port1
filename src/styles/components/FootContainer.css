@@ -1,3 +1,7 @@
+footer {
+    margin-top: 3rem;
+}
+
 #foot-container {
     width: 100%;
 }
@@ -15,6 +19,7 @@
 
 #info-tab {
     display: flex;
+    justify-content: center;
 }
 
 .logo {
@@ -23,10 +28,8 @@
 }
 
 #info {
-    /*border-left: .1rem dotted black;*/
-    /*border-bottom: .1rem dotted black;*/
-    /*border-radius: .5rem;*/
     padding: .5rem;
+    text-align: center;
 }
 
 #foot-logo {

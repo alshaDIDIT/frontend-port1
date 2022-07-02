@@ -40,3 +40,28 @@ a {
   text-decoration: none;
   color: black;
 }
+
+.container {
+  max-width: 150rem;
+  margin: 1rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-sm {
+  gap: 1rem;
+}
