@@ -15,17 +15,37 @@ const Home = () => {
 
             <div className="center-content">
                 <div className="container gap-sm">
-                    <div className="d-flex">
-                        <TallCard />
+                    <div className="d-flex gap-sm">
+                        <TallCard
+                            link={"/"}
+                            title={"Make it yours!"}
+                            label={"You can do it"}
+                            backImage={'https://images.unsplash.com/photo-1504297050568-910d24c426d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80'}
+                        />
                         <div className="d-flex flex-col gap-sm">
-                            <WideCard />
-                            <div className="d-flex">
-                                <Card />
-                                <Card />
+                            <WideCard
+                                link={"/"}
+                                title={"This is your future!"}
+                                label={"Grab it"}
+                                backImage={'https://images.unsplash.com/photo-1656656443542-178a2fca6122?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80'}
+                            />
+                            <div id="card-holder" className="gap-sm">
+                                <Card
+                                    link={"/about"}
+                                    label={"About"}
+                                    title={"Get to know us"}
+                                    backImage={'https://images.unsplash.com/photo-1656710225172-85f6051edb5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80'}
+                                />
+                                <Card
+                                    link={"/contact"}
+                                    label={"Contact"}
+                                    title={"Let us hear from you"}
+                                    backImage={'https://images.unsplash.com/photo-1656660371960-7fa3321af896?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80'}
+                                />
                             </div>
                         </div>
                     </div>
-                    <TitleCard />
+                    <TitleCard/>
                 </div>
             </div>
 

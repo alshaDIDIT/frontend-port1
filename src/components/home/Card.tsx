@@ -1,19 +1,28 @@
 import React from 'react';
+import {Link} from "react-router-dom";
+import '../../styles/components/Cards.css'
 
-const Card = () => {
+interface IProps {
+    link: string;
+    title: string;
+    label:string;
+    backImage: string;
+}
+
+const Card = (props: IProps) => {
     return (
-        <div>
-            <div id="card">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti ducimus esse eum incidunt
-                iste obcaecati sequi voluptates? Ad aliquam dolore dolorem itaque laudantium minus quod, quos similique!
-                Cum cupiditate itaque repudiandae tenetur velit veniam vero vitae voluptatum. Aliquid cum delectus
-                deleniti doloribus ex ipsa minus natus non numquam odio omnis, provident quam sed sint tempore. Aliquid
-                amet asperiores aspernatur atque commodi, consequuntur cum dignissimos dolore ea enim impedit iste
-                laboriosam laborum neque nihil nulla odio officiis porro quia saepe similique veniam voluptatem.
-                Accusantium animi aspernatur eos ex expedita impedit ipsa, nam non possimus quia! Doloribus fugit itaque
-                magnam vitae!
+            <div id="card" style={{backgroundImage: 'url(' + props.backImage + ')'}}>
+                <Link className="card-link" to={props.link} >
+                {/*Don't @ me*/}
+                    <h1>{props.title}</h1>
+                    <h3>{props.label}</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi aut beatae culpa dolores enim
+                    harum id, illum ipsa nemo nesciunt odio quia recusandae rerum soluta. Accusantium cumque dolorem ea
+                    id ipsam magni nam officia quas? Id quos ullam vero voluptatibus. Aspernatur ex incidunt minima
+                    obcaecati quisquam rerum? Distinctio, quis.</p>
+                </Link>
             </div>
-        </div>
+
     );
 };
 
