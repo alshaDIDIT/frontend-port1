@@ -1,14 +1,16 @@
 import React from 'react';
 import '../../styles/components/FootContainer.css'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faMicrochip} from "@fortawesome/free-solid-svg-icons";
 
 const FootContainer = () => {
     return (
         <div id="foot-container">
             <div id="foot-content">
                 <div id="foot-center-items">
-                    {/*<div id="foot-logo">*/}
-                    {/*    <h1>logo</h1>*/}
-                    {/*</div>*/}
+                    <div id="foot-logo">
+                        <h1>fake logo <FontAwesomeIcon icon={faMicrochip} /></h1>
+                    </div>
                     <div className="social-tab">
                         <a href="#"><img className="logo" src={require("../../assets/img/facebook.png")} alt="iconsout.com"/></a>
                         <a href="#"><img className="logo" src={require("../../assets/img/instagram.png")} alt="Instagram Icon by Juraj Sedlák - iconsout.com"/></a>

@@ -2,10 +2,30 @@ import React from 'react';
 
 import '../../styles/components/Cards.css'
 
-const TitleCard = () => {
+interface IProps {
+    link: string;
+    title: string;
+    label: string;
+    videoUrl: string;
+}
+
+const TitleCard = (props: IProps) => {
     return (
         <div id="title-card-container">
             <div id="title-card">
+                <div id="title-video">
+                    <video autoPlay muted loop id="card-video">
+                        <source
+                            src={props.videoUrl}
+                            type="video/mp4"
+                        />
+                    </video>
+                    <div className="card-link" id="video-link">
+                        {/*Don't @ me*/}
+                        <h1>{props.title}</h1>
+                        <h3>{props.label}</h3>
+                    </div>
+                </div>
                 {/*Don't @ me*/}
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos explicabo labore pariatur rerum!
                     Architecto consectetur eaque eveniet hic incidunt iusto laudantium minima modi nihil odio officiis

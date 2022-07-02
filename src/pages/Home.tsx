@@ -25,8 +25,8 @@ const Home = () => {
                         <div className="d-flex flex-col gap-sm">
                             <WideCard
                                 link={"/"}
-                                title={"This is your future!"}
-                                label={"Grab it"}
+                                title={"Forward and upwards!"}
+                                label={"Go grab it"}
                                 backImage={'https://images.unsplash.com/photo-1656656443542-178a2fca6122?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80'}
                             />
                             <div id="card-holder" className="gap-sm">
@@ -45,7 +45,12 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <TitleCard/>
+                    <TitleCard
+                        link={"/"}
+                        label={"Sit back and relax"}
+                        title={"Let us do the work!"}
+                        videoUrl={'https://assets.mixkit.co/videos/preview/mixkit-people-ending-a-business-meeting-4802-large.mp4'}
+                    />
                 </div>
             </div>
 
