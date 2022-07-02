@@ -1,11 +1,9 @@
 import React from 'react';
 
-const Home = () => {
+export const NotFound = () => {
     return (
         <div>
-            Hem
+            Hemsidan hittades inte!
         </div>
     );
 };
-
-export default Home;

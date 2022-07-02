@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styles/components/VideoComp.css'
+import '../../styles/components/VideoComp.css'
+// import Vid from '../../assets/spin.mp4'
 
 const VideoComp = () => {
     return (
@@ -16,7 +17,9 @@ const VideoComp = () => {
                 <h1>logo</h1>
             </div>
             <div id="video-mid">
-                <h1>Lorem Ipsum!</h1>
+                <h1>Hello World!</h1>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at deleniti dicta eius eum
+                    facere maiores necessitatibus odit provident vero!</h2>
             </div>
             <div id="video-bot">
                 <div id="bottom-icon">
