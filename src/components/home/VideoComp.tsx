@@ -15,7 +15,7 @@ const VideoComp = () => {
                 </video>
             </div>
             <div id="video-top">
-                <h1>fake logo <FontAwesomeIcon icon={faMicrochip} /></h1>
+                <h1>Lorem Ipsum <FontAwesomeIcon icon={faMicrochip} /></h1>
             </div>
             <div id="video-mid">
                 <h1>Hello World!</h1>

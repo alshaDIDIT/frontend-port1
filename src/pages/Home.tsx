@@ -32,13 +32,13 @@ const Home = () => {
                             <div id="card-holder" className="gap-sm">
                                 <Card
                                     link={"/about"}
-                                    label={"About"}
+                                    label={"About us"}
                                     title={"Get to know us"}
                                     backImage={'https://images.unsplash.com/photo-1656710225172-85f6051edb5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80'}
                                 />
                                 <Card
                                     link={"/contact"}
-                                    label={"Contact"}
+                                    label={"Contact us"}
                                     title={"Let us hear from you"}
                                     backImage={'https://images.unsplash.com/photo-1656660371960-7fa3321af896?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80'}
                                 />

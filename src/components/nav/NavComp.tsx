@@ -33,6 +33,7 @@ const NavComp = () => {
             >
                 <div
                     id="icon-click"
+                    style={(!clicked) ? {boxShadow: '0rem 0rem .25rem rgba(0,0,0,.5)'} : {}}
                     onClick={handleClick}
                 >
                     <HandleIcon />
